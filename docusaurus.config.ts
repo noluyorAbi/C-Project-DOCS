@@ -10,7 +10,7 @@ const config: Config = {
   favicon: "img/favicon.ico",
 
   // Set the production url of your site here
-  url: "https://your-docusaurus-site.example.com",
+  url: "https://c-project-docs.vercel.app",
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: "/",
@@ -27,8 +27,8 @@ const config: Config = {
   // useful metadata like html lang. For example, if your site is Chinese, you
   // may want to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: "en",
-    locales: ["en"],
+    defaultLocale: "de",
+    locales: ["de"],
   },
 
   presets: [
@@ -66,7 +66,7 @@ const config: Config = {
 
   themeConfig: {
     // Replace with your project's social card
-    image: "img/logo.svg",
+    image: "img/studio-61e4530e1349aa50966fcdd03a7326b7-bl3lccoq.jpg",
     navbar: {
       title: "< Gruppe 18 | C-Projekt >",
       logo: {
