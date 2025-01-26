@@ -5,8 +5,6 @@ description: Verwaltung und Kommunikation von TCP-Verbindungen mit Spielserver
 
 # tcp_performConnection
 
-# tcp_performConnection
-
 ## Inhalt des Ordners
 
 Der Ordner `tcp_performConnection` enthält mehrere Header- und Quellcodedateien, die die Funktionalität zur Erstellung und Verwaltung von TCP-Verbindungen sowie zur Kommunikation mit einem Spielserver bereitstellen. Die enthaltenen Dateien sind:

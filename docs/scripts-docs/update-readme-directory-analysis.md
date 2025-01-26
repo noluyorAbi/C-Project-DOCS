@@ -2,9 +2,7 @@
 sidebar_position: 2
 ---
 
-# Ordnername: update_readme
-
-## Inhalt des Ordners
+# update_readme
 
 Dieser Ordner enthält das Bash-Skript `update_readme.sh` sowie eine `README.md`-Datei. Diese Dateien dienen zur Automatisierung der Aktualisierung von Projektdokumentationen.
 

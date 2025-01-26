@@ -4,8 +4,6 @@ sidebar_position: 1
 
 # setup_precommit
 
-## Inhalt des Ordners
-
 Der Ordner `setup_precommit` enthält ein Skript zur Einrichtung eines Git-`pre-commit`-Hooks sowie eine zugehörige README-Datei. Der Zweck dieses Ordners ist es, sicherzustellen, dass alle Codeeinreichungen in einem Git-Repository vor dem Commit bestimmten Qualitätsstandards entsprechen und dass die Dokumentation der Projektstruktur auf dem neuesten Stand gehalten wird.
 
 ## Funktionalität

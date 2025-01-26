@@ -5,8 +5,6 @@ description: Verwaltung von gemeinsam genutztem Speicher für Spiele
 
 # shared_memory
 
-# Shared Memory Modul
-
 ## Inhalt des Ordners
 
 Der Ordner 'shared_memory' enthält zwei zentrale Dateien:
