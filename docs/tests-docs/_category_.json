@@ -1,8 +1,8 @@
 {
-  "label": "Tests - Docs",
-  "position": 4,
+  "label": "Tests",
+  "position": 1,
   "link": {
     "type": "generated-index",
-    "description": "Prüfung von Konfigurationsdateien und Kommandozeilenargumenten\nTests für Shared-Memory-Funktionalität\nIntegrationstest für die Funktion `performConnection`\nVerwaltung und Beschreibung von Projekt-Testdateien"
+    "description": "Integrationstest für performConnection-Funktion in TCP-Kommunikationsmodul\nTesten und Validieren von Shared-Memory-Operationen\nAutomatisiertes Testen der Client-Konfiguration und Argumentenverarbeitung\nAblage und Strukturierung von Testdateien"
   }
 }

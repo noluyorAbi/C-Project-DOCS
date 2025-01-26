@@ -57,7 +57,7 @@ Inhalt:\n\n{content}"""
     return summary.strip()
 
 def update_frontmatter(file_path, description):
-    """Aktualisiert die Metadaten im YAML-Frontmatter der MD-Datei."""
+    """Aktualisiert die Metadaten im YAML-Frontmatter der MD/MDX-Datei."""
     with open(file_path, "r", encoding="utf-8") as f:
         content = f.read()
 
@@ -88,45 +88,51 @@ def update_frontmatter(file_path, description):
         f.write(new_content)
 
 def process_directory(directory, category_path, client):
-    """Verarbeitet ein Verzeichnis mit deutschen Beschreibungen."""
+    """Verarbeitet ein Verzeichnis mit deutschen Beschreibungen für MD und MDX."""
     category = load_category_json(category_path)
     markdown_dir = Path(directory)
     description_list = []
 
-    for file in markdown_dir.glob("*.md"):
-        try:
-            if file.name == "_category_.json":
-                continue
+    # Sucht sowohl .md als auch .mdx Dateien
+    for ext in ["*.md", "*.mdx"]:
+        for file in markdown_dir.glob(ext):
+            try:
+                if file.name == "_category_.json":
+                    continue
 
-            print(f"Verarbeite: {file.name}")
-            summary = analyze_markdown_content(file, client)
-            
-            # Extrahiere Metadaten
-            if "Dateiname:" not in summary or "Zweck:" not in summary:
-                print(f"Ungültiges Format in Antwort:\n{summary}")
-                continue
-
-            zweck = summary.split("Zweck:")[1].split("Dateiname:")[0].strip()
-            filename = summary.split("Dateiname:")[1].strip().lower()
-            filename = filename.replace(" ", "-").replace("_", "-") + ".md"
-            new_path = file.with_name(filename)
-
-            # Umbenennung durchführen
-            if not new_path.exists():
-                os.rename(file, new_path)
-                print(f"Umbenannt zu: {filename}")
+                print(f"Verarbeite: {file.name}")
+                summary = analyze_markdown_content(file, client)
                 
-                # Frontmatter aktualisieren
-                update_frontmatter(new_path, zweck)
-                
-                # Entferne führendes "-" und füge die Beschreibung hinzu
-                clean_zweck = re.sub(r'^-\s+', '', zweck)
-                description_list.append(clean_zweck)
-            else:
-                print(f"Überspringe existierende Datei: {filename}")
+                # Extrahiere Metadaten
+                if "Dateiname:" not in summary or "Zweck:" not in summary:
+                    print(f"Ungültiges Format in Antwort:\n{summary}")
+                    continue
 
-        except Exception as e:
-            print(f"Fehler bei {file.name}: {str(e)}")
+                zweck = summary.split("Zweck:")[1].split("Dateiname:")[0].strip()
+                filename = summary.split("Dateiname:")[1].strip().lower()
+                filename = filename.replace(" ", "-").replace("_", "-")
+                
+                # Beibehaltung der Originalerweiterung
+                original_ext = file.suffix
+                new_filename = f"{filename}{original_ext}"
+                new_path = file.with_name(new_filename)
+
+                # Umbenennung durchführen
+                if not new_path.exists():
+                    os.rename(file, new_path)
+                    print(f"Umbenannt zu: {new_filename}")
+                    
+                    # Frontmatter aktualisieren
+                    update_frontmatter(new_path, zweck)
+                    
+                    # Entferne führendes "-" und füge die Beschreibung hinzu
+                    clean_zweck = re.sub(r'^-\s+', '', zweck)
+                    description_list.append(clean_zweck)
+                else:
+                    print(f"Überspringe existierende Datei: {new_filename}")
+
+            except Exception as e:
+                print(f"Fehler bei {file.name}: {str(e)}")
 
     # Aktualisiere Kategoriedatei
     if description_list:

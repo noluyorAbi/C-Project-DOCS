@@ -1,8 +1,8 @@
 {
-  "label": "Scripts - Docs",
-  "position": 3,
+  "label": "Scripts",
+  "position": 1,
   "link": {
     "type": "generated-index",
-    "description": "Automatisierung der README.md-Aktualisierung via Bash-Skript\nEinrichtung und Verwendung von Git pre-commit Hooks"
+    "description": "Automatisierte Aktualisierung der Projektdokumentation\nAutomatisierung von Codequalität und Dokumentationsaktualisierung vor Commits\nVerwaltung und strukturierte Ablage von Automatisierungsskripten"
   }
 }

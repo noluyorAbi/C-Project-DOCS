@@ -1,8 +1,8 @@
 {
-  "label": "Modules - Docs",
-  "position": 2,
+  "label": "Modules",
+  "position": 1,
   "link": {
     "type": "generated-index",
-    "description": "Verarbeitung von Kommandozeilenargumenten und Konfigurationsdateien\nImplementierung und Management von geteiltem Speicher\nVerwaltung und Kommunikation von TCP-Verbindungen mit Spielserver\nBerechnung des nächsten Spielzugs in einem Spiel"
+    "description": "Verwaltung von TCP-Verbindungen und Spielphasen\nVerarbeitung von Spielskonfigurationen und Kommandozeilenargumenten\nVerwaltung gemeinsamen Speichers in Mehrprozess-Systemen\nBerechnung des nächsten Spielzugs in einem Brettspiel\nDokumentation der Modulstruktur eines Softwareprojekts"
   }
 }
