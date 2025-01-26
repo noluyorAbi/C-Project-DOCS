@@ -3,6 +3,6 @@
   "position": 2,
   "link": {
     "type": "generated-index",
-    "description": "Dokumentation für alle Module des C-Projekts"
+    "description": "- Verwaltung von gemeinsam genutztem Speicher für Spiele\n- Verarbeitung von Kommandozeilenargumenten und Konfigurationsdateien\n- Berechnung des nächsten Spielzugs aus Spielzustand\n- Verwaltung und Kommunikation von TCP-Verbindungen mit Spielserver"
   }
 }

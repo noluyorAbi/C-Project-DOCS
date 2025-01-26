@@ -1,10 +1,9 @@
 ---
 sidebar_position: 4
+description: Berechnung des nächsten Spielzugs aus Spielzustand
 ---
 
 # think
-
-# Modul: think
 
 ## Inhalt des Ordners
 Der Ordner `think` beinhaltet die folgenden Dateien:

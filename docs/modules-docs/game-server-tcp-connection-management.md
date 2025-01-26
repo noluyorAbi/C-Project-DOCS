@@ -1,5 +1,6 @@
 ---
 sidebar_position: 3
+description: Verwaltung und Kommunikation von TCP-Verbindungen mit Spielserver
 ---
 
 # tcp_performConnection
