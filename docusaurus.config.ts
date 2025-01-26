@@ -6,7 +6,7 @@ import type * as Preset from "@docusaurus/preset-classic";
 
 const config: Config = {
   title: "Gruppe 18 | C-Projekt",
-  tagline: "Dokumenation für das C-Projekt der Gruppe 18",
+  tagline: "Dokumentation für das C-Projekt der Gruppe 18",
   favicon: "img/favicon.ico",
 
   // Set the production url of your site here
