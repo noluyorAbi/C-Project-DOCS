@@ -3,7 +3,6 @@ import clsx from "clsx";
 import Link from "@docusaurus/Link";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import Layout from "@theme/Layout";
-import HomepageFeatures from "@site/src/components/HomepageFeatures";
 import Heading from "@theme/Heading";
 
 import styles from "./index.module.css";
@@ -33,19 +32,52 @@ function HomepageHeader() {
 function Features() {
   const FeatureList = [
     {
-      title: 'Leistungsstark',
-      icon: '🚀',
-      description: 'Entwickelt in C für optimale Leistung und Effizienz.',
+      title: "Leistungsstark",
+      icon: "🚀",
+      description: "Entwickelt in C für optimale Leistung und Effizienz.",
     },
     {
-      title: 'Gut dokumentiert',
-      icon: '📚',
-      description: 'Umfassende Dokumentation für einfache Nutzung und Erweiterung.',
+      title: "Gut dokumentiert",
+      icon: "📚",
+      description:
+        "Umfassende Dokumentation für einfache Nutzung und Erweiterung.",
     },
     {
-      title: 'Open Source',
-      icon: '🌐',
-      description: 'Frei verfügbar auf GitHub für Zusammenarbeit und Verbesserungen.',
+      title: "Open Source",
+      icon: "🌐",
+      description:
+        "Frei verfügbar auf GitHub für Zusammenarbeit und Verbesserungen.",
+    },
+    {
+      title: "Effiziente C-Implementierung",
+      icon: "💻",
+      description: (
+        <>
+          Unser Client für das Neunermühle-Spiel ist in C implementiert, was
+          höchste Leistung und Effizienz gewährleistet.
+        </>
+      ),
+    },
+    {
+      title: "Modulare Struktur",
+      icon: "🧩",
+      description: (
+        <>
+          Das Projekt ist in Module wie args_parser, shared_memory, und
+          tcp_performConnection unterteilt, was die Wartbarkeit und
+          Erweiterbarkeit verbessert.
+        </>
+      ),
+    },
+    {
+      title: "Umfangreiche Tests",
+      icon: "🧪",
+      description: (
+        <>
+          Mit unserem umfassenden Testsystem, einschließlich Unit-Tests und
+          Integrationstests, stellen wir die Zuverlässigkeit des Clients sicher.
+        </>
+      ),
     },
   ];
 
@@ -62,13 +94,15 @@ function Features() {
   );
 }
 
-function Feature({title, icon, description}) {
+function Feature({ title, icon, description }) {
   return (
-    <div className={clsx('col col--4')}>
+    <div className={clsx("col col--4")}>
       <div className={styles.featureItem}>
         <div className={styles.featureIcon}>{icon}</div>
         <div className={styles.featureContent}>
-          <Heading as="h3" className={styles.featureTitle}>{title}</Heading>
+          <Heading as="h3" className={styles.featureTitle}>
+            {title}
+          </Heading>
           <p>{description}</p>
         </div>
       </div>
@@ -86,7 +120,6 @@ export default function Home(): JSX.Element {
       <HomepageHeader />
       <main>
         <Features />
-        <HomepageFeatures />
       </main>
     </Layout>
   );
