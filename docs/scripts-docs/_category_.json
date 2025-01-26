@@ -3,6 +3,6 @@
   "position": 3,
   "link": {
     "type": "generated-index",
-    "description": "- update-readme-directory-analysis.md: The content describes the purpose, functionality, dependencies, usage, and internal structure of 'update_readme.sh' Bash script and 'README.md' file found in the 'update_readme' directory. The 'update_readme.sh' script automates the update of a project's documentation.\n- git-pre-commit-hook-setup-guide.md: This markdown file discusses the purpose, usage, and internal structure of `setup_precommit`, a script for setting up a Git pre-commit hook to ensure code quality and up-to-date documentation in a project."
+    "description": "Automatisierung der README.md-Aktualisierung via Bash-Skript\nEinrichtung und Verwendung von Git pre-commit Hooks"
   }
 }

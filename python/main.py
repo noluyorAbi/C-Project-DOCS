@@ -1,5 +1,6 @@
 import os
 import json
+import re
 from openai import OpenAI
 from pathlib import Path
 from dotenv import load_dotenv
@@ -118,8 +119,9 @@ def process_directory(directory, category_path, client):
                 # Frontmatter aktualisieren
                 update_frontmatter(new_path, zweck)
                 
-                # Füge deutsche Beschreibung ohne Dateinamen hinzu
-                description_list.append(f"- {zweck}")
+                # Entferne führendes "-" und füge die Beschreibung hinzu
+                clean_zweck = re.sub(r'^-\s+', '', zweck)
+                description_list.append(clean_zweck)
             else:
                 print(f"Überspringe existierende Datei: {filename}")
 
@@ -128,7 +130,9 @@ def process_directory(directory, category_path, client):
 
     # Aktualisiere Kategoriedatei
     if description_list:
-        category["link"]["description"] = "\n".join(description_list)
+        # Entferne führende "-" und fügen Sie die Beschreibungen hinzu
+        category_descriptions = "\n".join(description_list)
+        category["link"]["description"] = category_descriptions
         save_category_json(category_path, category)
         print(f"Kategoriebeschreibung aktualisiert in: {category_path}")
 

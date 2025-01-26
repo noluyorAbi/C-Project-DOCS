@@ -1,5 +1,6 @@
 ---
 sidebar_position: 1
+description: Einrichtung und Verwendung von Git pre-commit Hooks
 ---
 
 # setup_precommit

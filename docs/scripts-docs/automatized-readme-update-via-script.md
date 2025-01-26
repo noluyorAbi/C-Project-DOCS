@@ -1,5 +1,6 @@
 ---
 sidebar_position: 2
+description: Automatisierung der README.md-Aktualisierung via Bash-Skript
 ---
 
 # update_readme

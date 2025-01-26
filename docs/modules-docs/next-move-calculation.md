@@ -1,6 +1,6 @@
 ---
 sidebar_position: 4
-description: Berechnung des nächsten Spielzugs aus Spielzustand
+description: Berechnung des nächsten Spielzugs in einem Spiel
 ---
 
 # think

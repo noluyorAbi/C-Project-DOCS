@@ -1,6 +1,6 @@
 ---
 sidebar_position: 2
-description: Verwaltung von gemeinsam genutztem Speicher für Spiele
+description: Implementierung und Management von geteiltem Speicher
 ---
 
 # shared_memory

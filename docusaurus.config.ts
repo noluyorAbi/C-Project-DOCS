@@ -50,7 +50,7 @@ const config: Config = {
           },
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-         /*  editUrl:
+          /*  editUrl:
             "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/", */
           // Useful options to enforce blogging best practices
           onInlineTags: "warn",
@@ -78,10 +78,10 @@ const config: Config = {
           type: "docSidebar",
           sidebarId: "tutorialSidebar",
           position: "left",
-          label: "Documentation",
+          label: "Dokumentation",
         },
-/*         { to: "/blog", label: "Blog", position: "left" },
- */        {
+        /*         { to: "/blog", label: "Blog", position: "left" },
+         */ {
           href: "https://github.com/noluyorAbi/C-Project",
           label: "GitHub",
           position: "right",
@@ -95,7 +95,7 @@ const config: Config = {
           title: "Docs",
           items: [
             {
-              label: "Documentation",
+              label: "Dokumentation",
               to: "/docs/intro",
             },
           ],
@@ -103,7 +103,7 @@ const config: Config = {
         {
           title: "Community",
           items: [
-/*             {
+            /*             {
               label: "Stack Overflow",
               href: "https://stackoverflow.com/questions/tagged/docusaurus",
             },
@@ -124,7 +124,7 @@ const config: Config = {
         {
           title: "More",
           items: [
-/*             {
+            /*             {
               label: "Blog",
               to: "/blog",
             }, */
