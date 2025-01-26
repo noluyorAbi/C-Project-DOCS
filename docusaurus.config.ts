@@ -78,7 +78,7 @@ const config: Config = {
           type: "docSidebar",
           sidebarId: "tutorialSidebar",
           position: "left",
-          label: "Docs",
+          label: "Documentation",
         },
 /*         { to: "/blog", label: "Blog", position: "left" },
  */        {
@@ -95,7 +95,7 @@ const config: Config = {
           title: "Docs",
           items: [
             {
-              label: "Tutorial",
+              label: "Documentation",
               to: "/docs/intro",
             },
           ],
@@ -103,7 +103,7 @@ const config: Config = {
         {
           title: "Community",
           items: [
-            {
+/*             {
               label: "Stack Overflow",
               href: "https://stackoverflow.com/questions/tagged/docusaurus",
             },
@@ -114,16 +114,20 @@ const config: Config = {
             {
               label: "X",
               href: "https://x.com/docusaurus",
+            }, */
+            {
+              label: "GitHub Discussions",
+              href: "https://github.com/noluyorAbi/C-Project/discussions",
             },
           ],
         },
         {
           title: "More",
           items: [
-            {
+/*             {
               label: "Blog",
               to: "/blog",
-            },
+            }, */
             {
               label: "GitHub",
               href: "https://github.com/noluyorAbi/C-Project",

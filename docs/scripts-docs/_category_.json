@@ -1,0 +1,9 @@
+{
+  "label": "Scripts - Docs",
+  "position": 3,
+  "link": {
+    "type": "generated-index",
+    "description": "Dokumentation für alle Skripte des C-Projekts"
+
+  }
+}
