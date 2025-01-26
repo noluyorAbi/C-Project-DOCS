@@ -114,8 +114,8 @@ export default function Home(): JSX.Element {
   const { siteConfig } = useDocusaurusContext();
   return (
     <Layout
-      title={`Willkommen bei ${siteConfig.title}`}
-      description="Beschreibung wird in einem Meta-Tag im <head /> erscheinen"
+      title={`${siteConfig.title}`}
+      description="Dokumenation für das C-Projekt der Gruppe 18"
     >
       <HomepageHeader />
       <main>
